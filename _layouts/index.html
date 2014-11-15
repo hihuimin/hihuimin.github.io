@@ -2,11 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title | xml_escape }} - {{ site.title }}</title>
+  <title>{{ page.title | xml_escape }} - {{ site.title | xml_escape }}</title>
   <link rel="stylesheet" type="text/css" href="/css/markdown.css">
 </head>
 <body>
   <article class="markdown-body">
+  	<h2>{{ site.title | xml_escape }}</h2>
     {{ content }}
   </article>
 </body>
