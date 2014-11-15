@@ -8,7 +8,7 @@
 <body>
   <article class="markdown-body">
   	<h2>{{ page.title | xml_escape }}</h2>
-  	<p style="text-align:right">{{ page.date | date_to_string }}</p>
+  	<p style="text-align:right">{{ page.date | date:"%b %-d, %Y" }}</p>
     {{ content }}
   </article>
 </body>
