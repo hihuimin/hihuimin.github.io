@@ -7,15 +7,15 @@ title: "CSS3之相对字体大小单位REM"
 
 由于所有浏览器的默认字体大小均为**16px**，若设置html的font-size为62.5%或10px，则1.2rem为12px、1.7rem为17px；
 
-反观`em`，它以当前元素字体大小为基准，计算时需考虑继承的影响，考虑下列html结构，p的实际font-size为10px * 1.2 * 1.2=14.4px：
+反观`em`，它以当前元素字体大小为基准，计算时需考虑继承的影响，考虑下列html结构，p的实际font-size为10px * 1.2 * 1.2 = 14.4px：
 
-<pre>
+{% highlight html %}
 <html style="font-size:62.5%">
   <body style="font-size:1.2em">
     <p style="font-size:1.2m"></p>
   </body>
 </html>
-</pre>
+{% endhighlight %}
 
 请尽量的使用相对单位来定义字体大小吧，这样要调整时只需修改一处的值即可。
 
