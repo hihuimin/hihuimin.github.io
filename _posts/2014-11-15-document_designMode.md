@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "document.designMode"
+title: "用document.designMode开户文档编辑模式"
 ---
 
 头一次听说这个属性。。默认为`off`或`inherit`，将它设为`on`可对整个文档进行编辑，与下列代码等效：
