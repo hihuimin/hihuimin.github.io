@@ -1,3 +1,8 @@
+---
+layout: post
+title: "原来JS Object属性的顺序是靠谱滴"
+---
+
 今天在啃ReactJs文档时看到这么一段话：
 
 > It is important to remember that JavaScript does not guarantee the ordering of properties will be preserved. In practice browsers will preserve property order except for properties that can be parsed as a 32-bit unsigned integers. Numeric properties will be ordered sequentially and before other properties.
